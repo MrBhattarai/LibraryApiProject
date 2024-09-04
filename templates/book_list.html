@@ -1,0 +1,18 @@
+{%block content %}
+    <h1>All Books</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Subtitle</th>
+            <th>Author</th>
+            <th>ISBN</th>
+        </tr>
+        {% for book in book_list %}
+            <tr>
+                <td>{{ book.title }} &nbsp</td>
+                <td>{{ book.subtitle }}&nbsp</td>
+                <td>{{ book.author }}&nbsp</td>
+                <td>{{ book.isbn }}&nbsp</td>
+            </tr>
+        {% endfor %}
+{% endblock %}
